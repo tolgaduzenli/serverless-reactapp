@@ -1,11 +1,18 @@
 {
-  "name": "serverless-note-editor",
+  "name": "serverless-reactapp",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://j8a7e74e54.execute-api.us-east-1.amazonaws.com/dev",
   "dependencies": {
+    "axios": "^0.18.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "materialize-css": "^1.0.0",
     "react": "^16.6.3",
+    "react-awesome-modal": "^2.0.5",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "react-test-renderer": "^16.6.3"
   },
   "scripts": {
     "start": "react-scripts start",
