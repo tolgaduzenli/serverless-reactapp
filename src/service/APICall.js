@@ -14,9 +14,9 @@ export const saveNewNote = (title, description) => {
 }
 
 export const updateNote = (id, title, description) => {
-    return axios.put(PUT_URL + id, { title, description })
+    return axios.put(PUT_URL + '?id=' + id, { title, description })
 }
 
 export const deleteNote = (id) => {
-    return axios.delete(DELETE_URL + id)
+    return axios.delete(DELETE_URL + '?id=' + id)
 }
