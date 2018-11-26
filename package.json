@@ -2,7 +2,6 @@
   "name": "serverless-reactapp",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://j8a7e74e54.execute-api.us-east-1.amazonaws.com/dev",
   "dependencies": {
     "axios": "^0.18.0",
     "enzyme": "^3.7.0",
