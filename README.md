@@ -1,6 +1,4 @@
-# Web application to Create, Edit or Delete Notes by Serverless API (AWS Lambda)
-
-This application makes request to the AWS Lambda functions to provide CRUD operations
+# Web application to Create, Edit or Delete Note by Serverless API (AWS Lambda)
 
 ## How to run
 
@@ -17,4 +15,10 @@ This application makes request to the AWS Lambda functions to provide CRUD opera
 * enzyme
 * axios
 
-API or AWS Lambda functions' [url](https://j8a7e74e54.execute-api.us-east-1.amazonaws.com/dev) placed in package.json file as a `proxy` value.
+### End point mapping
+
+* [Link](https://7vsntirtje.execute-api.us-east-1.amazonaws.com/dev)
+* Get request `/notes` to get all notes
+* Post request `/notes` with `{title:"", description:"" }` to create new note
+* Put request `/notes/` with query param `?id=<note_id>` and `{title:"", description:"" }` to update exist note
+* Delete request `/notes/` with query param `?id=<note_id>` to delete exist note
